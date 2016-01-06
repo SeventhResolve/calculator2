@@ -22,4 +22,7 @@ def calculate():
         print subtract(operand1, operand2)
     elif operation == "*":
         print multiply(operand1, operand2)
+    elif operation == "/":
+        print divide(operand1, operand2)
+        
 calculate()
