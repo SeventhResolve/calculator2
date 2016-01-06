@@ -20,5 +20,6 @@ def calculate():
         print add(operand1, operand2)
     elif operation == "-":
         print subtract(operand1, operand2)
-
+    elif operation == "*":
+        print multiply(operand1, operand2)
 calculate()
