@@ -9,15 +9,16 @@ from arithmetic import *
 
 
 # Your code goes here
-def try_to_add():
+def calculate():
     user_input = raw_input("> ")
     tokens = user_input.split(" ")
     operation = tokens[0] 
-    operation1 = int(tokens[1])
-    operation2 = int(tokens[2])
+    operand1 = int(tokens[1])
+    operand2 = int(tokens[2])
 
     if operation == "+":
-        print add(operation1, operation2)
-    
+        print add(operand1, operand2)
+    elif operation == "-":
+        print subtract(operand1, operand2)
 
-try_to_add()
+calculate()
