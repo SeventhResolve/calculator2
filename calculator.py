@@ -9,11 +9,15 @@ from arithmetic import *
 
 
 # Your code goes here
-user_input = raw_input("> ")
-tokens = user_input.split(" ")
-operation = tokens[0] 
-operation1 = int(tokens[1])
-operation2 = int(tokens[2])
+def try_to_add():
+    user_input = raw_input("> ")
+    tokens = user_input.split(" ")
+    operation = tokens[0] 
+    operation1 = int(tokens[1])
+    operation2 = int(tokens[2])
 
-if operation == "+":
-    print add(operation1, operation2)
+    if operation == "+":
+        print add(operation1, operation2)
+    
+
+try_to_add()
