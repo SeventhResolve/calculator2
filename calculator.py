@@ -27,6 +27,8 @@ def calculate():
         print divide(operand1, operand2)
     elif operation == "square":
         print square(operand1)
+    elif operation == "cube":
+        print cube(operand1)
 
 
 calculate()
