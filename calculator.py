@@ -31,6 +31,8 @@ def calculate():
         print cube(operand1)
     elif operation == "pow":
         print power(operand1, operand2)
+    elif operation == "mod":
+        print mod(operand1, operand2)
 
 
 calculate()
