@@ -14,7 +14,8 @@ def calculate():
     tokens = user_input.split(" ")
     operation = tokens[0] 
     operand1 = int(tokens[1])
-    operand2 = int(tokens[2])
+    if len(tokens) == 3:
+        operand2 = int(tokens[2])
 
     if operation == "+":
         print add(operand1, operand2)
@@ -24,5 +25,8 @@ def calculate():
         print multiply(operand1, operand2)
     elif operation == "/":
         print divide(operand1, operand2)
-        
+    elif operation == "square":
+        print square(operand1)
+
+
 calculate()
