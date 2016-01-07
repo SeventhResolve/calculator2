@@ -29,6 +29,8 @@ def calculate():
         print square(operand1)
     elif operation == "cube":
         print cube(operand1)
+    elif operation == "pow":
+        print power(operand1, operand2)
 
 
 calculate()
