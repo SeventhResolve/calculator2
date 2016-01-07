@@ -27,8 +27,15 @@ def cube(num1):
 
 
 def power(num1, num2):
-    return num1 ** num2  # ** = exponent operator
+    return float(num1) ** float(num2)  # ** = exponent operator
 
 
 def mod(num1, num2):
     return num1 % num2
+
+# def add(num1):
+#     if type(num1) == type([]):
+#         for item in num1:
+#             item_int = int(item)
+            
+#         return sum(num1)

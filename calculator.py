@@ -16,22 +16,29 @@ print """
 """
 
 def calculate():
+    """ Takes 2 to 3 tokens and performs math operations """
+
     user_input = raw_input("> ")
     tokens = user_input.split(" ")
     if len(tokens) >= 2:
         operation = tokens[0] 
-        operand1 = int(tokens[1])
+        operand1 = tokens[1:]
+        print operand1
+        #operand1 = float(tokens[1])
         if len(tokens) == 3:
-            operand2 = int(tokens[2])
+            operand2 = float(tokens[2])
 
         if operation == "+":
-            print add(operand1, operand2)
+            add_sum = add(operand1)
+            print add_sum
             return calculate()
-        elif operation == "-":
-            print subtract(operand1, operand2)
+        elif operation == "-":        
+            sub = int(subtract(operand1, operand2))
+            print sub
             return calculate()
         elif operation == "*":
-            print multiply(operand1, operand2)
+            result = int(multiply(operand1, operand2))
+            print result
             return calculate()
         elif operation == "/":
             print divide(operand1, operand2)
@@ -46,7 +53,8 @@ def calculate():
             print power(operand1, operand2)
             return calculate()
         elif operation == "mod":
-            print mod(operand1, operand2)   
+            result_mod = int(mod(operand1, operand2))
+            print result_mod
             return calculate()
 
     elif len(tokens) == 1 and tokens[0] == "q":
